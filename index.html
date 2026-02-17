@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Patterns</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Life Patterns</h1>
+    <p>Track your daily habits and visualize patterns.</p>
+
+    <form id="habitForm">
+      <input type="date" id="date" required />
+      <input type="number" id="sleep" placeholder="Sleep (hours)" required />
+      <input type="number" id="work" placeholder="Work (hours)" required />
+      <input type="number" id="exercise" placeholder="Exercise (minutes)" required />
+      <select id="mood">
+        <option value="1">😞</option>
+        <option value="2">😐</option>
+        <option value="3">🙂</option>
+        <option value="4">😃</option>
+        <option value="5">🤩</option>
+      </select>
+      <button type="submit">Save</button>
+    </form>
+
+    <canvas id="chart"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
